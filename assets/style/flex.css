@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.pink{
+    background-color: pink;
+}
+.blue {
+    background-color: aqua;
+}
+.green {
+    background-color: olivedrab;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    text-align: center;
+    display : flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex : 3;
+}
+nav > h2 {
+    padding-bottom: 10px;
+}
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+nav > ul > li {
+    border: 1px solid white;
+    width: 20%;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+main {
+    display : flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex : 12;
+}
+aside {
+    display:flex;
+    flex: 2;
+    padding : 10px;
+}
+section {
+    display:flex;
+    flex : 6;
+}
+article{
+    padding: 20px;
+}
+footer {
+    display : flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items : center;
+    flex: 1;
+}
+
+/* A la base j'aurais souhaité que mes "aside" rétrécissent beaucoup plus vite que ma section lors du flex en largeur... Mais la maîtrise du flex:grow/SHRINK/basis n'est pas encore là ^^ */
